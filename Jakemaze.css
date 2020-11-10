@@ -1,0 +1,38 @@
+#grid {
+    display:inline-grid;
+    width:auto;
+    height:auto;
+    grid-template-columns: auto auto auto auto auto;
+  
+}
+
+#mazeborder {
+        display:inline-block;
+        border: 3px solid black;
+}
+       
+
+.grid-item{
+    border-style:solid;
+    border-color: black;
+    border-width: 2px 2px 2px 0px;
+    text-align:center;
+    height:120px;
+    width:120px;
+}
+
+body {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.jake {
+    background: url('jake.jpg') no-repeat center center;
+    background-size:50% 50%;
+}
+
+#box21 {
+    background: url('baconp.jpg') no-repeat center center;
+    background-size:50% 50%;
+}
