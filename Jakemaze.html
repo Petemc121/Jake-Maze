@@ -40,5 +40,44 @@
 
 
     </div>
+
+    <script>
+        view = {
+            addJake: function(location) {
+                location.setAttribute("class", "jake");
+            },
+
+            minusJake: function(location) {
+                location.removeAttribute("class", "jake")
+            }
+        }
+
+        controls = { 
+
+            arrowKeyDetect: function(e) {
+                                
+                    e = e || window.event;
+
+                if (e.keyCode == '38') {
+                    alert("up!")
+                }
+                else if (e.keyCode == '40') {
+                    alert("down!")
+
+                }
+                else if (e.keyCode == '37') {
+                    alert("Left")
+
+                }
+                else if (e.keyCode == '39') {
+                    alert("right!")
+
+                }
+                            }
+
+                }
+
+               document.onkeydown = controls.arrowKeyDetect();
+    </script>
 </body>
 </html>
