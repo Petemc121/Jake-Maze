@@ -1,4 +1,5 @@
 var boardDOM = document.getElementById('board');
+var panel = document.getElementById('panel');
 
 const box = {
 
@@ -14,6 +15,10 @@ const board = {
     width: 40,
 }
 
+
+
+
+function buildGrid() {
  for (let i = 0; i < board.width; i++) {
 
     row = document.createElement('div');
@@ -36,3 +41,41 @@ const board = {
 
    }
  }
+}
+
+buildGrid();
+
+boxes = document.getElementsByClassName('box');
+
+function mouseDown(element) {
+
+
+    document.addEventListener("mousedown", function() {
+
+
+        element.addEventListener("mouseover", function() {
+
+            element.style.backgroundColor = panel.value;
+            
+        })
+
+        isTrue = true;
+
+        
+    
+
+});
+
+
+}
+
+
+
+for(i=0; i<boxes.length; i++) {
+   setTimeout( mouseDown(boxes[i]), 1000);
+
+ 
+}
+
+document.addEventListener("mouseup", function() {clearTimeout(mouseDown(), false);
+});
