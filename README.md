@@ -1,2 +1,2 @@
-# Jake-Maze
-A simple maze game where Jake tries to find the pancakes!
+# paint-web-app
+A simplified version of paint.
